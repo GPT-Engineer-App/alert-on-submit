@@ -5,7 +5,8 @@ const Index = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    alert("hello!");
+    const nameInput = formRef.current.elements.name;
+    alert(nameInput.value);
   };
 
   return (
